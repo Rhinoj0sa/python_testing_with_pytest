@@ -1,6 +1,7 @@
 """Test the Task data type."""
-from tasks import Task
-
+# from tasks import Task
+from collections import namedtuple
+Task = namedtuple('Task', ['summary', 'owner', 'done', 'id'])
 
 def test_asdict():
     """_asdict() should return a dictionary."""
@@ -16,8 +17,11 @@ def test_asdict():
 def test_replace():
     """replace() should change passed in fields."""
     t_before = Task('finish book', 'brian', False)
+    print(t_before)
     t_after = t_before._replace(id=10, done=True)
+    print(t_after)
     t_expected = Task('finish book', 'brian', True, 10)
+    print(t_expected)
     assert t_after == t_expected
 
 

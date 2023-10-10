@@ -2,7 +2,7 @@
 
 from __future__ import print_function
 import click
-import tasks.config
+import tasks_proj.src.tasks.api as tasks.config
 from contextlib import contextmanager
 from tasks.api import Task
 

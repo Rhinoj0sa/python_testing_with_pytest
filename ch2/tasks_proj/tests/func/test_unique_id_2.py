@@ -1,7 +1,7 @@
 """Test tasks.unique_id()."""
 
 import pytest
-import tasks
+import tasks_proj.src.tasks.api as tasks_proj.src.tasks.api as tasks
 from tasks import Task
 
 

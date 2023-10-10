@@ -2,8 +2,8 @@ from click.testing import CliRunner
 from contextlib import contextmanager
 import pytest
 from tasks.api import Task
-import tasks.cli
-import tasks.config
+import tasks_proj.src.tasks.api as tasks.cli
+import tasks_proj.src.tasks.api as tasks.config
 
 
 @contextmanager

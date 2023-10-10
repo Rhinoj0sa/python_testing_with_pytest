@@ -1,4 +1,4 @@
-import tasks
+import tasks_proj.src.tasks.api as tasks
 
 
 def test_delete_decreases_count(db_with_3_tasks):

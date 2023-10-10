@@ -1,7 +1,7 @@
 """Define some fixtures to use in the project."""
 
 import pytest
-import tasks
+import tasks_proj.src.tasks.api as tasks
 from tasks import Task
 
 

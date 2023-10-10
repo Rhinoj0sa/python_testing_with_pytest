@@ -1,7 +1,7 @@
 import unittest
 import shutil
 import tempfile
-import tasks
+import tasks_proj.src.tasks.api as tasks
 from tasks import Task
 
 
